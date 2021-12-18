@@ -310,3 +310,10 @@ hr{
         text-align: center;
     }
 }
+/*QUIENES SOMOS*/
+
+.letra{
+    font-size: 50px;
+    text-align: center;
+    color: hotpink;
+}
