@@ -318,11 +318,26 @@ hr {
    
 }
 
-.imagentravel img{
-    width: 700px;
+.imagentravel{
+    /*width: 700px;
   height: 600px;
   margin-left: 260px; 
   margin-right: auto;
+  background: url(./imagenes/2.png) no-repeat
+  center center/cover;
+*/
+ 
+  width: 600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(./imagenes/2.png) no-repeat center center/cover;
+  padding: 50px; /*Todo de aqui para abajo es para separar la imagen con el menu de arriba*/
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 
 .textopri h2{
