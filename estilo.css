@@ -42,7 +42,8 @@ ul {
 }
 
 .nav-imagen {
-  width: 110px;
+  width: 100px;
+  height: 80px;
 }
 
 /*NAVEGACION IZQUIERDA*/
@@ -367,3 +368,4 @@ hr {
     font-size: 20px;
     margin: 10px 0;
   }
+
