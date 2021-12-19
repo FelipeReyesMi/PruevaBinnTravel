@@ -1,319 +1,354 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{/*colocamos la imagen de fondo*/
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url(./imagenes/istockphoto-1072907054-170667a.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    font-weight: bold;
-    
+body {
+  /*colocamos la imagen de fondo*/
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(./imagenes/istockphoto-1072907054-170667a.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: bold;
 }
 
-a{ /* Este apartado colocamos el color de las letras del menu*/
-    color: rgb(255, 255, 255);
-    text-decoration: none;/*Para quitar las lineas subrayadas*/
-    
+a {
+  /* Este apartado colocamos el color de las letras del menu*/
+  color: rgb(255, 255, 255);
+  text-decoration: none; /*Para quitar las lineas subrayadas*/
 }
 
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
-.contenido{
-    width: 90%;
-    margin: auto;
+.contenido {
+  width: 90%;
+  margin: auto;
 }
 
 /*Navegacion*/
 
-.nav-menu{
-    font-size: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-    padding: 20px 0;
+.nav-menu {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding:10px 0;
 }
 
-.nav-imagen{
-    width: 110px;
+.nav-imagen {
+  width: 110px;
 }
 
 /*NAVEGACION IZQUIERDA*/
 .nav-menu ul {
-    display: flex;
+  display: flex;
 }
 
-.nav-menu ul li{
-    padding: 20px;
+.nav-menu ul li {
+  padding: 10px;
 }
 
-.nav-menu ul li a{
-   
-    padding: 2px;
+.nav-menu ul li a {
+  padding: 0px;
 }
-.nav-menu ul li a:hover{
-    border-bottom: 2px rgb(0, 0, 0);
-    
+.nav-menu ul li a:hover {
+  border-bottom: 2px rgb(0, 0, 0);
 }
-.nav-menu ul.nav-submenu1{
-    flex: 1;
-    margin-left: 120px;
+.nav-menu ul.nav-submenu1 {
+  flex: 1;
+  margin-left: 120px;
 }
 /*Crecion de boton de navegacion*/
-.menuboton{
-    cursor: pointer;
-    position: absolute;
-    top: 15px;
-    right: 30px;
-    z-index: 2;
-    display: none;
+.menuboton {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  z-index: 2;
+  display: none;
 }
 /*Noticia principal*/
-hr{
-    margin: 10px 0;
+hr {
+  margin: 10px 0;
 }
-.noticiaPrincipal{
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(255, 255, 255);
-    width: 100%;
-    height: 500px;
-    background: url(./imagenes/principal.png) no-repeat center center/cover;
-    padding: 50px;/*Todo de aqui para abajo es para separar la imagen con el menu de arriba*/
-    margin-bottom: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;/*Es para colocar las letras en la parte inferior en la imagen*/
-    
-    
+.noticiaPrincipal {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 500px;
+  background: url(./imagenes/principal.png) no-repeat center center/cover;
+  padding: 50px; /*Todo de aqui para abajo es para separar la imagen con el menu de arriba*/
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end; /*Es para colocar las letras en la parte inferior en la imagen*/
 }
 
-
-.boton{/*Dar estilo al boton */
-    cursor: pointer;
-    display: inline-block;
-    border: 0;
-    font-weight: bold;
-    padding: 10px 20px;
-    background: rgb(0, 14, 90);
-    font-size: 15px;
-    color: rgb(255, 255, 255);
-    margin: 10px 0;
+.boton {
+  /*Dar estilo al boton */
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: rgb(0, 14, 90);
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  margin: 10px 0;
 }
 
-.boton:hover{
-    opacity: .7;/*Es para poder darle el efecto de opacar el boton*/
-
+.boton:hover {
+  opacity: 0.7; /*Es para poder darle el efecto de opacar el boton*/
 }
 
-.text ,
-.p{
-    margin-bottom: 10px;
-  
+.text,
+.p {
+  margin-bottom: 10px;
 }
 
 /*Columnas*/
 
-.cards{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);/*Indicamos en cuantas columnas se van a dividir*/
-    gap: 25px; /*Colocamos la separacion que tendra entre los elementos*/
-    margin: 10px 0;
+.cards {
+  display: grid;
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /*Indicamos en cuantas columnas se van a dividir*/
+  gap: 25px; /*Colocamos la separacion que tendra entre los elementos*/
+  margin: 10px 0;
 }
 
-.cards img{
-   width: 100%;
-   height: 180px;
+.cards img {
+  width: 100%;
+  height: 180px;
 }
 
-.cards h3{
-    font-size: 20px;
-    margin: 10px 0;
+.cards h3 {
+  font-size: 20px;
+  margin: 10px 0;
 }
 
 /*Seccion1*/
 
-.seccion{
-    width: 100%;
-    height: 450px;
-    background: url(./imagenes/diseno-y-desarrollo-de-webs-accesibles-accesibilidad-web.png)no-repeat center center/cover;
-    margin-bottom: 40px;
+.seccion {
+  width: 100%;
+  height: 450px;
+  background: url(./imagenes/diseno-y-desarrollo-de-webs-accesibles-accesibilidad-web.png)
+    no-repeat center center/cover;
+  margin-bottom: 40px;
 }
 
-.seccion .contenido2{
-    width: 40%;
-    padding: 90px 0 0 30px;
-    color: white ;
+.seccion .contenido2 {
+  width: 40%;
+  padding: 90px 0 0 30px;
+  color: white;
 }
 
 .h22,
-.p2{
-    color: black;
-    margin: 10px 0 20px 0;
+.p2 {
+  color: black;
+  margin: 10px 0 20px 0;
 }
 /*Seccion2*/
-.seccion2{
-    width: 100%;
-    height: 500px;
-    background: url(./imagenes/wur-carteles-discapacitados-logos-simbolos-dibujos-plantillas-editar-online.jpg )no-repeat center center/cover;
-    
-   
+.seccion2 {
+  width: 100%;
+  height: 500px;
+  background: url(./imagenes/wur-carteles-discapacitados-logos-simbolos-dibujos-plantillas-editar-online.jpg)
+    no-repeat center center/cover;
 }
 
-.seccion2 .contenido3{
-    width: 100%;
-    padding: 300px 0 0 30px;
-    color: white ;
+.seccion2 .contenido3 {
+  width: 100%;
+  padding: 300px 0 0 30px;
+  color: white;
 }
 
 /*Redes sociales*/
 
-.social{
-    margin: 50px;
+.social {
+  margin: 50px;
 }
 
-.social p{
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 20px;
-    color: burlywood;
+.social p {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: burlywood;
 }
 
-.links{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.links a{
-    margin: 0 30px;
+.links a {
+  margin: 0 30px;
 }
-.links a i{
-    font-size: 3rem;
-    color: rgb(151, 135, 222);
+.links a i {
+  font-size: 3rem;
+  color: rgb(151, 135, 222);
 }
 
 /*Pie de Pagina*/
-.piepagina{
-    background: url(./imagenes/abe73d9fd645fb677da633e680a224bd.jpg)no-repeat center center/cover;
-   
-    color: white;
-    font-size: 12px;
-    padding: 35px 0;
+.piepagina {
+  background: url(./imagenes/abe73d9fd645fb677da633e680a224bd.jpg) no-repeat
+    center center/cover;
 
+  color: white;
+  font-size: 12px;
+  padding: 35px 0;
 }
-.pagina-conte ul li a h3{
-    color: rgb(0, 0, 0);
-    font-size: 15px;
+.pagina-conte ul li a h3 {
+  color: rgb(0, 0, 0);
+  font-size: 15px;
 }
-.pagina-conte{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 10px;
-    align-items: flex-start;
-    justify-content: center;
+.pagina-conte {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
 }
-.pagina-conte ul{
-   margin: 0 auto; 
+.pagina-conte ul {
+  margin: 0 auto;
 }
 
-.pagina-conte ul li{
-    line-height: 2.8;
+.pagina-conte ul li {
+  line-height: 2.8;
 }
 
 /*Nota*/
-.nota{
-    background: url(./imagenes/abe73d9fd645fb677da633e680a224bd.jpg)no-repeat center center/cover;
-    color: rgb(0, 0, 0);
-    font-size: 15px;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 1rem;
-    padding-bottom: 20px;
+.nota {
+  background: url(./imagenes/abe73d9fd645fb677da633e680a224bd.jpg) no-repeat
+    center center/cover;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1rem;
+  padding-bottom: 20px;
 }
 
 /*Para que soporte en las plataformas tanto navegador y telefono*/
-@media (max-width: 700px){
-    .menuboton{
-        display: block;
-    }
-    .menuboton:hover{
-        opacity: 0.5;
-    }
-    .nav-menu ul.nav-submenu1{
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: #2f3640;
-        width: 50%;
-        height: 100%;
-        border-right: #ccc 1px solid;
-        opacity: 0.9;
-        padding: 30px;
-        transform: translateX(-500px);
-        transition: transform 0.5s ease-in-out;
-    }
-    /*Clase para aparecer la barra de navegacion*/
-    
-    .nav-menu ul.nav-submenu1 li{
-        padding: 20px;
-        border-bottom: #ccc solid 1px;
-        font-size: 14px;
-    }
-    
-    .nav-menu ul.nav-submenu1 li:last-child{
-        border-bottom: 0;
-    }
-    .nav-menu ul.nav-submenu1.show{
-        transform: translateX(-20px);
-    }
-    
-    .nav-menu ul.nav-menu3{
-        margin-right: 50px;
-    }
+@media (max-width: 700px) {
+  .menuboton {
+    display: block;
+  }
+  .menuboton:hover {
+    opacity: 0.5;
+  }
+  .nav-menu ul.nav-submenu1 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #2f3640;
+    width: 50%;
+    height: 100%;
+    border-right: #ccc 1px solid;
+    opacity: 0.9;
+    padding: 30px;
+    transform: translateX(-500px);
+    transition: transform 0.5s ease-in-out;
+  }
+  /*Clase para aparecer la barra de navegacion*/
 
-    .cards{
-        grid-template-columns: repeat(2,1fr);
-    }
-    .seccion .contenido2,
-    .seccion2 .contenido3{
-        width: 80%;
-    }
+  .nav-menu ul.nav-submenu1 li {
+    padding: 20px;
+    border-bottom: #ccc solid 1px;
+    font-size: 14px;
+  }
 
-    .piepagina.pagina-conte{
-        grid-template-columns: repeat(2,1fr);
-    }
+  .nav-menu ul.nav-submenu1 li:last-child {
+    border-bottom: 0;
+  }
+  .nav-menu ul.nav-submenu1.show {
+    transform: translateX(-20px);
+  }
 
+  .nav-menu ul.nav-menu3 {
+    margin-right: 50px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .seccion .contenido2,
+  .seccion2 .contenido3 {
+    width: 80%;
+  }
+
+  .piepagina.pagina-conte {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-@media (max-width: 500px){
-    .cards{
-        grid-template-columns: 1fr;
-    }
-    .seccion .contenido2,
-    .seccion2 .contenido3{
-        width: 100%;
-        padding: 60px 20px;
-    }
-    .piepagina.pagina-conte{
-        grid-template-columns: 1fr;
-    }
-    .piepagina.pagina-conte ul{
-        text-align: center;
-    }
+@media (max-width: 500px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .seccion .contenido2,
+  .seccion2 .contenido3 {
+    width: 100%;
+    padding: 60px 20px;
+  }
+  .piepagina.pagina-conte {
+    grid-template-columns: 1fr;
+  }
+  .piepagina.pagina-conte ul {
+    text-align: center;
+  }
 }
+
+
 /*QUIENES SOMOS*/
 
 .letra{
     font-size: 50px;
     text-align: center;
     color: hotpink;
+   
 }
+
+.imagentravel img{
+    width: 700px;
+  height: 600px;
+  margin-left: 260px; 
+  margin-right: auto;
+}
+
+.textopri h2{
+    background: url(./imagenes/color-degradado-fondos-degradados-multicolor-51200.jpg)no-repeat
+    center center/cover;
+    color: rgb(0, 0, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.integrantes {
+    display: grid;
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /*Indicamos en cuantas columnas se van a dividir*/
+    gap: 25px; /*Colocamos la separacion que tendra entre los elementos*/
+    margin: 10px 0;
+  }
+  
+  .integrantes img {
+    width: 50%;
+    height: 180px;
+    margin-left: 70px; 
+  }
+  
+  .integrantes h3 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
